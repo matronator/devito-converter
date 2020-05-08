@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "strictNullChecks": true,
+    "target": "ES5",
+    "outDir": "dist",
+    "module": "none",
+    "sourceMap": true,
+    "rootDir": "src",
+    "listFiles": true,
+    "watch": true,
+    "preserveWatchOutput": true,
+    "outFile": "dist/devito.js"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "dannydevito",
+  "version": "1.0.0",
+  "description": "Measure length in Danny DeVitos",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matronator/devito-converter.git"
+  },
+  "keywords": [
+    "danny",
+    "devito",
+    "devito"
+  ],
+  "author": "Matronator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matronator/devito-converter/issues"
+  },
+  "homepage": "https://github.com/matronator/devito-converter#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
