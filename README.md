@@ -2,6 +2,8 @@
 
 Measure length in Danny DeVitos!
 
+Demo: https://matronator.github.io/devito-converter/
+
 ## Use in Browser
 
 Download the `devito.js` file from `dist` folder and include it in your HTML file.
