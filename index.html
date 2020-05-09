@@ -11,37 +11,35 @@
     <header>
       <h1>DeVito Converter <small>(Browser version)</small></h1>
       <p class="lead">Measure length in Danny DeVitos!</p>
-      <div>
-        Meters <input type="text" id="metersInput"> = <input type="text" id="devitosInput"> DeVitos
+      <div class="inputs">
+        <label for="metersInput">Meters <input type="text" id="metersInput" name="metersInput" value="10"></label> = <label for="devitosInput"><input type="text" id="devitosInput" name="devitosInput" value="14.7"> DeVitos</label>
       </div>
     </header>
     <section>
       <h2>Use in Browser</h2>
-      <p>For use as a npm module see <a href="/index.html">"NPM version"</a></p>
+      <!-- <p>For use as a npm module see <a href="/index.html">"NPM version"</a></p> -->
       <h3>External file</h3>
       <h4>index.html</h4>
       <pre class="html">
-&lt;body>
-  &lt;h1>Hello World! Danny DeVito is &lt;span id="devitoHeight">&lt;/span> meters tall!&lt;/h1>
+&lt;h1>Hello World!
+Danny DeVito is &lt;span id="devitoHeight">&lt;/span> meters tall!&lt;/h1>
 
-  &lt;script src="/path/to/devito.js">&lt;/script>
-  &lt;script>
-    var converter = new DannyDeVito();
-    var span = document.getElementById(`devitoHeight`);
+&lt;script src="/path/to/devito.js">&lt;/script>
+&lt;script>
+  var converter = new DannyDeVito();
+  var span = document.getElementById(`devitoHeight`);
 
-    span.innerHtml = converter.toMeters(1, 0);
-  &lt;/script>
-&lt;/body>
+  span.innerHtml = converter.toMeters(1, 0);
+&lt;/script>
 </pre>
       <h3>Inline `<code>&lt;script&gt;</code>` tag</h3>
       <h4>index.html</h4>
       <pre class="html">
-&lt;body>
-  &lt;h1>Hello World! Danny DeVito is &lt;span id="devitoHeight">&lt;/span> meters tall!&lt;/h1>
+&lt;h1>Hello World!
+Danny DeVito is &lt;span id="devitoHeight">&lt;/span> meters tall!&lt;/h1>
 
-  &lt;script src="/path/to/devito.js">&lt;/script>
-  &lt;script src="/path/to/your/script.js">&lt;/script>
-&lt;/body>
+&lt;script src="/path/to/devito.js">&lt;/script>
+&lt;script src="/path/to/your/script.js">&lt;/script>
 </pre>
       <h4>script.js</h4>
       <pre class="javascript">
@@ -52,6 +50,7 @@ span.innerHtml = converter.toMeters(1, 0);
 </pre>
     </section>
   </main>
+  <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/left-red@2x.png" alt="Fork me on GitHub"></a>
 
   <script src="/dist/devito.js"></script>
   <script src="/browser.js"></script>

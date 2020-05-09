@@ -18,6 +18,7 @@ main {
   margin: 0 auto;
   padding: 10px 20px;
   width: 80vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +31,44 @@ header {
 section {
   width: 100%;
   padding: 50px 100px;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.25rem;
+}
+input {
+  font-size: 1.125rem;
+  width: 160px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid #afafaf;
+}
+@media screen and (max-width: 1012px) {
+  main {
+    width: 90vw;
+    padding: 50px 10px;
+  }
+  section {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 560px) {
+  main {
+    width: 100vw;
+    padding: 100px 10px;
+  }
+  section {
+    padding: 0;
+  }
+  .inputs {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 h1 {
   font-size: 2.5rem;
@@ -47,6 +86,12 @@ p.lead {
 pre {
   background-color: #eff0f1;
   padding: 1rem 1.5rem;
+  color: #111111;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 pre.html .html-tag, pre.javascript .js-num {
   color: #942121;
